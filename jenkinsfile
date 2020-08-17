@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Python version'){
             steps{
-                'python --version'
+                bat 'python --version'
             }
         }
         stage("Build"){
@@ -14,7 +14,7 @@ pipeline{
         stage("Deploy"){
             steps{
                 echo 'Deploy Done!'
-                'pwd'
+                bat 'pwd'
             }
         }
     }
