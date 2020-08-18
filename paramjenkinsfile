@@ -1,0 +1,10 @@
+pipeline{
+  agent any
+  stages{
+      stage('Initial Stage'){
+          steps{
+             bat "echo %string_param%"
+          }
+      }
+  }
+}
