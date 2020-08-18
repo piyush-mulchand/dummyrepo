@@ -14,7 +14,8 @@ pipeline{
           cd numpy
           dir
           cd .. 
-          echo %workspace%/numpy
+          cd %workspace%/numpy
+          dir
           """
         }
       }
