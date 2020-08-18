@@ -10,7 +10,7 @@ pipeline{
         steps{
           bat """
           echo %workspace%
-          move *.py .\numpy
+          move *.py ./numpy
           cd numpy
           dir
           """
