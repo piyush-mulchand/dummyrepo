@@ -11,7 +11,7 @@ pipeline{
           bat "echo %workspace%"
           bat "mkdir numpy"
           bat "cd numpy"
-          bat "pip install numpy -t %workspace%\numpy"
+          bat "echo %cd%"
         }
       }
   }
