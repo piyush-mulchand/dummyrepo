@@ -13,6 +13,8 @@ pipeline{
           move *.py ./numpy
           cd numpy
           dir
+          cd .. 
+          echo %workspace%/numpy
           """
         }
       }
