@@ -8,7 +8,10 @@ pipeline{
       }
       stage('Install numpy'){
         steps{
-          bat "echo %cd%"
+          bat "echo %workspace%"
+          bat "mkdir numpy"
+          bat "cd numpy"
+          bat "pip install numpy -t %workspace%\numpy"
         }
       }
   }
